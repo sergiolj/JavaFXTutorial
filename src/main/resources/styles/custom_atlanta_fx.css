@@ -1,0 +1,26 @@
+/* meu-tema.css */
+.root {
+
+    /* Mudando a cor principal de destaque (Accent) para um verde personalizado */
+    /*
+ -color-accent-emphasis: #ff0000;
+ -color-accent-fg: #ffffff;
+*/
+    /* Deixando as bordas dos campos mais arredondadas */
+    /*
+    -fx-background-radius: 2px;
+    /*
+    -fx-background-color: #d1ff0b;
+*/
+}
+
+
+/* Você também pode sobrescrever classes específicas normalmente. */
+/*
+.button.danger {
+    -fx-background-color: #c0392b;
+}
+.button{
+    -fx-background-radius: 3px, 3px;
+}
+*/
