@@ -27,13 +27,14 @@ public class EventsList {
         return instance;
     }
 
-    public void add(RunningEvent event) {
+    public boolean add(RunningEvent event) {
         if (event != null) {
             events.add(event);
             System.out.println("Novo evento adicionado");
-        }else {
-            System.out.println("Erro: nenhum evento para adicionar");
+            return  true;
         }
+            System.out.println("Erro: nenhum evento para adicionar");
+            return false;
     }
 
     public ArrayList<RunningEvent> getEventsList() {

@@ -60,6 +60,10 @@ public class RunningEvent {
         this.distance.add(distance);
     }
 
+    public void addListOfDistances(List<Distances> distances) {
+        this.distance.addAll(distances);
+    }
+
     public String getDistance() {
         StringBuilder sb = new StringBuilder();
         for (Distances distance : distance) {
