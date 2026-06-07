@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucsal.edu.br.runner.javafx.controller.ECreatorController">
+    <VBox alignment="CENTER">
+        <ImageView fx:id="img_event" fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="btn_img_loader" mnemonicParsing="false" text="Load Image">
+         <VBox.margin>
+             <Insets top="20.0" />
+         </VBox.margin>
+        </Button>
+        <TextField fx:id="txf_event_name" alignment="CENTER" promptText="Nome do Evento">
+         <VBox.margin>
+             <Insets bottom="10.0" left="50.0" right="50.0" top="20.0" />
+         </VBox.margin>
+        </TextField>
+        <TextArea fx:id="txa_event_description" prefHeight="70.0" prefWidth="200.0" promptText="Descrição do evento">
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" />
+         </VBox.margin></TextArea>
+        <HBox alignment="CENTER" spacing="5.0">
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+            <ToggleButton fx:id="tgl_5k" mnemonicParsing="false" text="5km" />
+            <ToggleButton fx:id="tgl_10k" mnemonicParsing="false" text="10km" />
+            <ToggleButton fx:id="tgl_21k" mnemonicParsing="false" text="21km" />
+            <ToggleButton fx:id="tgl_42k" mnemonicParsing="false" text="42km" />
+        </HBox>
+        <DatePicker fx:id="date_picker">
+         <VBox.margin>
+             <Insets top="20.0" />
+         </VBox.margin>
+        </DatePicker>
+        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0" spacing="5.0">
+            <Button fx:id="btn_cancel" cancelButton="true" mnemonicParsing="false" text="Cancel" />
+            <Button fx:id="btn_create" mnemonicParsing="false" text="Create" />
+        </HBox>
+    </VBox>
+</StackPane>

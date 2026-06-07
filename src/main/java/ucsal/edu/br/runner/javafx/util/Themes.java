@@ -1,8 +1,14 @@
-package ucsal.edu.br.tutorial.util;
+package ucsal.edu.br.runner.javafx.util;
 
 import atlantafx.base.theme.*;
 import javafx.application.Application;
-
+/**
+ *
+ *
+ * @author Sérgio Lopes Júnior
+ *
+ * @version 1.0
+ */
 public enum Themes {
     PRIME_DARK(new PrimerDark()),
     PRIMER_LIGHT(new PrimerLight()),

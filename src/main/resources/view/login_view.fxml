@@ -4,7 +4,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane fx:id="bd_pane" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucsal.edu.br.tutorial.login.LoginController">
+<BorderPane fx:id="bd_pane" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ucsal.edu.br.runner.javafx.controller.LoginController">
    <bottom>
       <HBox alignment="CENTER" spacing="10.0">
          <BorderPane.margin>

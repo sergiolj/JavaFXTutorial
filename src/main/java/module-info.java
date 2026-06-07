@@ -1,25 +1,21 @@
-module ucsal.edu.br.tutorial {
+module ucsal.edu.br.runner.javafx {
     requires javafx.controls;
     requires javafx.fxml;
     requires atlantafx.base;
     requires java.desktop;
 
-    exports ucsal.edu.br.tutorial.model;
-    opens ucsal.edu.br.tutorial.model to javafx.fxml;
+    exports ucsal.edu.br.runner.javafx.model;
+    opens ucsal.edu.br.runner.javafx.model to javafx.fxml;
 
-    exports ucsal.edu.br.tutorial.util;
-    opens ucsal.edu.br.tutorial.util to javafx.fxml;
+    exports ucsal.edu.br.runner.javafx.util;
+    opens ucsal.edu.br.runner.javafx.util to javafx.fxml;
 
 
-    exports ucsal.edu.br.tutorial;
-    opens ucsal.edu.br.tutorial to javafx.fxml;
+    exports ucsal.edu.br.runner.javafx;
+    opens ucsal.edu.br.runner.javafx to javafx.fxml;
 
-    exports ucsal.edu.br.tutorial.login;
-    opens ucsal.edu.br.tutorial.login to javafx.fxml;
-
-    exports ucsal.edu.br.tutorial.hello;
-    opens ucsal.edu.br.tutorial.hello to javafx.fxml;
-
-    exports ucsal.edu.br.tutorial.controller;
-    opens ucsal.edu.br.tutorial.controller to javafx.fxml;
+    exports ucsal.edu.br.runner.javafx.controller;
+    opens ucsal.edu.br.runner.javafx.controller to javafx.fxml;
+    exports ucsal.edu.br.runner.javafx.navigation;
+    opens ucsal.edu.br.runner.javafx.navigation to javafx.fxml;
 }

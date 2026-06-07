@@ -1,16 +1,19 @@
-package ucsal.edu.br.tutorial.login;
+package ucsal.edu.br.runner.javafx.controller;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import ucsal.edu.br.tutorial.MainApp;
-import ucsal.edu.br.tutorial.util.AlertUtil;
-import ucsal.edu.br.tutorial.util.SceneManager;
-
+import javafx.stage.Window;
+import ucsal.edu.br.runner.javafx.util.AlertUtil;
+import ucsal.edu.br.runner.javafx.navigation.SceneManager;
+/**
+ *
+ *
+ * @author Sérgio Lopes Júnior
+ *
+ * @version 1.0
+ */
 public class LoginController {
     @FXML
     public Label lb_login_msg;
@@ -30,7 +33,9 @@ public class LoginController {
                     if (login_name.equalsIgnoreCase("") && password.equals("") ){
                         openApplication();
                     } else {
-                        AlertUtil.showError("Login Failed", "Login Failed, name or password is incorrect.");
+                        Window currentWindow = btn_login.getScene().getWindow();
+                        AlertUtil.showError("Login Failed",
+                                "Login Failed!!\n Username: blank and Password: blank.", currentWindow);
                     }
                 });
 

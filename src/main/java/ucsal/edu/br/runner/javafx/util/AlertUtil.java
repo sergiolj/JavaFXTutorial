@@ -1,4 +1,4 @@
-package ucsal.edu.br.tutorial.util;
+package ucsal.edu.br.runner.javafx.util;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -11,35 +11,49 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 import java.util.Objects;
 
+/**
+ *
+ *
+ * @author Sérgio Lopes Júnior
+ *
+ * @version 1.0
+ */
 public class AlertUtil {
 
-    public static void showWarning(String title, String message) {
+    public static void showWarning(String title, String message, Window owner) {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle(title);
         alert.setHeaderText(null);
         alert.setContentText(message);
-
+        if (owner != null) {
+            alert.initOwner(owner);
+        }
         alert.showAndWait();
     }
 
-    public static void showError(String title, String message) {
+    public static void showError(String title, String message, Window owner) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle(title);
         alert.setHeaderText(null);
         alert.setContentText(message);
-
+        if (owner != null) {
+            alert.initOwner(owner);
+        }
         alert.showAndWait();
     }
 
-    public static void showConfirmation(String title, String message) {
+    public static void showConfirmation(String title, String message,Window owner) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle(title);
         alert.setHeaderText(null);
         alert.setContentText(message);
-
+        if (owner != null) {
+            alert.initOwner(owner);
+        }
         alert.showAndWait();
     }
 

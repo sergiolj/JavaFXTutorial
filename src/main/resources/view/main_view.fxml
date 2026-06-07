@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane fx:controller="ucsal.edu.br.tutorial.controller.MainViewController"
+<BorderPane fx:controller="ucsal.edu.br.runner.javafx.controller.MainViewController"
             style="-fx-background-color: #161b22;"
             xmlns="http://javafx.com/javafx/17.0.12"
             xmlns:fx="http://javafx.com/fxml/1">

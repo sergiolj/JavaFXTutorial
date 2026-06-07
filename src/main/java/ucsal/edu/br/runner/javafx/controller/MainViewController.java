@@ -1,20 +1,27 @@
-package ucsal.edu.br.tutorial.controller;
+package ucsal.edu.br.runner.javafx.controller;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.Parent;
 
 import javafx.scene.control.*;
 import javafx.scene.layout.TilePane;
-import ucsal.edu.br.tutorial.model.EventsMockup;
-import ucsal.edu.br.tutorial.model.RunningEvent;
-import ucsal.edu.br.tutorial.util.AlertUtil;
-import ucsal.edu.br.tutorial.util.SceneManager;
+import ucsal.edu.br.runner.javafx.model.EventsList;
+import ucsal.edu.br.runner.javafx.model.RunningEvent;
+import ucsal.edu.br.runner.javafx.util.AlertUtil;
+import ucsal.edu.br.runner.javafx.navigation.SceneManager;
 
 import java.io.IOException;
 import java.util.List;
-
+/**
+ *
+ *
+ * @author Sérgio Lopes Júnior
+ *
+ * @version 1.0
+ */
 public class MainViewController {
     @FXML
     private MenuItem event_create_new;
@@ -27,8 +34,10 @@ public class MainViewController {
 
     @FXML
     public void initialize() {
+        tp_running_events.setPadding(new Insets(15));
+
         //Executar a leitura dos dados do BD para criar os eventos
-        List<RunningEvent> runningEventList = EventsMockup.mockUpData();
+        List<RunningEvent> runningEventList = EventsList.getInstance().getEventsList();
 
         for (RunningEvent event : runningEventList) {
             addCardEventToSelector(event);
@@ -49,10 +58,10 @@ public class MainViewController {
 
     private void addCardEventToSelector(RunningEvent event) {
         try{
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/showcase_scr/card_view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/card_view.fxml"));
             Parent cardPane = loader.load();
 
-            CardEventController controller = loader.getController();
+            ECardController controller = loader.getController();
             controller.createEvent(event);
 
             tp_running_events.getChildren().add(cardPane);

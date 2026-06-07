@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ucsal.edu.br.runner.javafx.controller.ECardController">
+   <VBox alignment="CENTER" StackPane.alignment="CENTER">
+      <ImageView fx:id="img_eventRun" fitHeight="190.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true"/>
+      <Label fx:id="lbl_tittle" alignment="CENTER" contentDisplay="CENTER" text="Running Name">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="14.0"/>
+         </font>
+      </Label>
+      <Label fx:id="lbl_date" alignment="CENTER" contentDisplay="CENTER" text="Date" textFill="RED">
+         <font>
+            <Font name="JetBrains Mono Bold" size="11.0"/>
+         </font>
+      </Label>
+      <Label fx:id="lbl_distance" alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="220.0"
+             text="Distance">
+         <font>
+            <Font name="JetBrains Mono Regular" size="11.0"/>
+         </font>
+      </Label>
+      <Button fx:id="btn_add_chart" alignment="CENTER" mnemonicParsing="false" text="Add to Chart"/>
+   </VBox>
+</StackPane>

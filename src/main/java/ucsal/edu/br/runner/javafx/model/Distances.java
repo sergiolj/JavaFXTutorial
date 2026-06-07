@@ -1,5 +1,11 @@
-package ucsal.edu.br.tutorial.util;
-
+package ucsal.edu.br.runner.javafx.model;
+/**
+ *
+ *
+ * @author Sérgio Lopes Júnior
+ *
+ * @version 1.0
+ */
 public enum Distances {
     D5K("5km", 5),
     D10K("10km", 10),
