@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucsal.edu.br.tutorial.controller.EventCreator">
+   <children>
+       <VBox>
+           <TextArea fx:id="txt_event_name" prefHeight="200.0" prefWidth="200.0" promptText="Nome do Evento" />
+           <CheckBox fx:id="ckb_5km" mnemonicParsing="false" text="5km" />
+           <CheckBox fx:id="ckb_10km" mnemonicParsing="false" text="10km" />
+           <CheckBox fx:id="chb_21km" mnemonicParsing="false" text="21km" />
+           <CheckBox fx:id="chb_42km" layoutX="10.0" layoutY="246.0" mnemonicParsing="false" text="42km" />
+           <TextField fx:id="txf_event_description" promptText="Descrição do Evento" />
+           <DatePicker />
+           <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <Button fx:id="btn_cancel" cancelButton="true" mnemonicParsing="false" text="Cancel" />
+               <Button fx:id="btn_create" mnemonicParsing="false" text="Create" />
+           </HBox>
+       </VBox>
+   </children>
+</StackPane>

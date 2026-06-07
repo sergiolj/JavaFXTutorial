@@ -4,14 +4,22 @@ module ucsal.edu.br.tutorial {
     requires atlantafx.base;
     requires java.desktop;
 
+    exports ucsal.edu.br.tutorial.model;
+    opens ucsal.edu.br.tutorial.model to javafx.fxml;
+
+    exports ucsal.edu.br.tutorial.util;
+    opens ucsal.edu.br.tutorial.util to javafx.fxml;
+
 
     exports ucsal.edu.br.tutorial;
     opens ucsal.edu.br.tutorial to javafx.fxml;
 
     exports ucsal.edu.br.tutorial.login;
     opens ucsal.edu.br.tutorial.login to javafx.fxml;
+
     exports ucsal.edu.br.tutorial.hello;
     opens ucsal.edu.br.tutorial.hello to javafx.fxml;
-    exports ucsal.edu.br.tutorial.showcase;
-    opens ucsal.edu.br.tutorial.showcase to javafx.fxml;
+
+    exports ucsal.edu.br.tutorial.controller;
+    opens ucsal.edu.br.tutorial.controller to javafx.fxml;
 }

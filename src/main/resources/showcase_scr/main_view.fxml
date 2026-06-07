@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:controller="ucsal.edu.br.tutorial.controller.MainViewController"
+            style="-fx-background-color: #161b22;"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu mnemonicParsing="false" text="Event">
+                <MenuItem fx:id="event_create_new" mnemonicParsing="false" text="New Event"/>
+                <SeparatorMenuItem mnemonicParsing="false"/>
+                <MenuItem fx:id="exit" mnemonicParsing="false" text="Exit"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <MenuItem fx:id="menu_about" mnemonicParsing="false" text="About"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <ScrollPane>
+            <padding>
+                <Insets bottom="50.0" left="50.0" right="50.0" top="100.0"/>
+            </padding>
+            <TilePane fx:id="tp_running_events" hgap="20.0" prefColumns="3" vgap="20.0"/>
+        </ScrollPane>
+    </center>
+</BorderPane>
+

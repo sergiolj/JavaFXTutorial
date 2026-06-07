@@ -3,15 +3,26 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 
-<AnchorPane prefHeight="250.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17.0.12"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucsal.edu.br.tutorial.showcase.CardEventController">
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucsal.edu.br.tutorial.controller.CardEventController">
    <children>
-      <ImageView fx:id="img_eventRun" fitHeight="225.0" fitWidth="200.0" pickOnBounds="true"
-                 preserveRatio="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0"
-                 AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Button fx:id="btn_info" layoutX="70.0" layoutY="223.0" mnemonicParsing="false"
-              text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <VBox alignment="CENTER" StackPane.alignment="CENTER">
+         <children>
+               <ImageView fx:id="img_eventRun" fitHeight="190.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lbl_tittle" alignment="CENTER" contentDisplay="CENTER" text="Nome da corrida">
+               <font>
+                  <Font name="JetBrains Mono ExtraBold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_distance" alignment="CENTER" contentDisplay="CENTER" text="Distancia">
+               <font>
+                  <Font name="JetBrains Mono Regular" size="11.0" />
+               </font>
+            </Label>
+               <Button fx:id="btn_add_chart" alignment="CENTER" mnemonicParsing="false" text="Add to Chart" />
+         </children>
+      </VBox>
    </children>
-</AnchorPane>
+</StackPane>

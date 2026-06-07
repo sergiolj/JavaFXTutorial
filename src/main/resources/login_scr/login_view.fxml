@@ -4,9 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane fx:id="bd_pane" prefHeight="400" prefWidth="300.0"
-            xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="ucsal.edu.br.tutorial.login.LoginController">
+<BorderPane fx:id="bd_pane" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucsal.edu.br.tutorial.login.LoginController">
    <bottom>
       <HBox alignment="CENTER" spacing="10.0">
          <BorderPane.margin>
@@ -16,7 +14,6 @@
             <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
          </padding>
          <Button fx:id="btn_login" mnemonicParsing="false" prefWidth="80.0" text="Login" />
-         <Button fx:id="btn_logout" mnemonicParsing="false" prefWidth="80.0" text="Logout" />
          <Button fx:id="btn_exit" mnemonicParsing="false" text="Exit" />
       </HBox>
    </bottom>
@@ -26,9 +23,9 @@
             <Insets left="20.0" right="20.0" top="20.0" />
          </BorderPane.margin>
          <TextField fx:id="tf_login_name" alignment="CENTER" promptText="Login name" />
-         <TextField fx:id="tf_password" alignment="CENTER" promptText="Password" />
+         <PasswordField fx:id="tf_password" alignment="CENTER" promptText="Password" />
          <Separator prefWidth="200.0" />
-         <Label fx:id="lb_login_msg" prefHeight="18.0" prefWidth="380.0" text="Label" visible="false" alignment="CENTER" />
+         <Label fx:id="lb_login_msg" alignment="CENTER" prefHeight="18.0" prefWidth="380.0" text="Label" visible="false" />
       </VBox>
    </center>
 </BorderPane>
